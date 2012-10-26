@@ -1,0 +1,125 @@
+/* 
+ * Main stylesheet for early version of this website 
+ */
+
+
+/* reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,
+em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td{
+	margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;
+	font-size:100%;font-family:inherit;vertical-align:baseline;
+}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+body{line-height:1.5;text-align:center;color:black;font-size:12px;font-family:Arial, Helvetica, sans-serif;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+caption,th,td{text-align:left;font-weight:normal;}
+table,td,th{vertical-align:middle;}
+a img{border:none;}
+a{text-decoration:none;color:inherit;color:expression(this.parentNode.currentStyle.color);}
+ul,ol {list-style-type:none;}
+em{font-style:italic;}
+strong{font-weight:bold;}
+input.submit{cursor:pointer;}
+.a11y{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+.clr{clear:both;height:1px;font-size:1px;line-height:1px;overflow:hidden;}
+#wrap{text-align:left;margin:auto;}
+
+/* main */
+body{background:repeat-x #c9c9c9;background-image:url(img/bg1.jpg);}
+#wrap{width:944px;padding-bottom:30px;display:none;}
+#main-t{background-image:url(img/box.jpg);height:81px;}
+#main-b{background:0 -81px;height:15px;background-image:url(img/box.jpg);}
+#main{background-image:url(img/box-m.jpg);position:relative;height:1076px;}
+.ie6 #main{height:854px;}
+.card{position:absolute;left:44px;top:-33px;width:854px;display:none;}
+
+/* header */
+#head{height:133px;padding:0 15px;color:white;}
+#head h1{font-size:40px;margin-bottom:5px;line-height:50px;padding-top:20px;}
+#head h2{font-size:18px;margin-bottom:20px;}
+#head .email{float:right;}
+#head .email a:hover{text-decoration:underline;}
+
+/* navigation */
+#tabs{position:absolute;top:-109px;right:30px;}
+#tabs a {line-height:38px;outline:none;height:35px;color:black;display:inline-block;margin-right:2px;background:#8f9094;}
+#tabs a:hover {background:#ceced1;}
+#tabs span{display:inline-block;padding:0 32px 0 32px;font-size:14px;height:35px;vertical-align:top;cursor:pointer;}
+#tabs a {
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+#tabs a{
+    -webkit-transition:background-color 0.3s linear;
+    -o-transition:background-color 0.3s linear;
+    -moz-transition:background-color 0.3s linear;
+    -ms-transition:background-color 0.3s linear;
+    transition:background-color 0.3s linear;
+}
+#tabs a.active, #tabs a.active:hover {
+    -webkit-transition:background-color 0.2s linear;
+    -o-transition:background-color 0.2s linear;
+    -moz-transition:background-color 0.2s linear;
+    -ms-transition:background-color 0.2s linear;
+    transition:background-color 0.2s linear;
+    background:-o-linear-gradient(top,#d1d1d1,#f5f5f5 80%) #f5f5f5;
+    background:-moz-linear-gradient(top center, #d1d1d1, #f5f5f5 80%) repeat scroll 0 0 #f5f5f5;
+    background:-webkit-gradient(linear,left bottom,left top,color-stop(.2, #f5f5f5),color-stop(.8, #d1d1d1));
+    background-color:#f5f5f5;
+}
+
+/* portfolio card */
+#portfolio{display:block;}
+#portfolio .item{float:left;padding:1px;background-image:url(img/thumb.jpg);width:180px;height:180px;position:relative;margin:0 0px 34px 34px;opacity:0.85;cursor:pointer;padding:4px;overflow:hidden;display:inline;}
+#portfolio .left{margin-left:0;}
+#portfolio .bottom{margin-bottom:0;}
+#portfolio .item img{width:180px;height:180px;display:block;-ms-interpolation-mode: bicubic;}
+#portfolio .item img.slider-only{display:none;}
+
+/* resume card */
+#resume ul{list-style-type:none;padding-left:0px;}
+#resume li{line-height:1.9em;background:2px 8px no-repeat;background-image:url(img/bullet.jpg);padding-left:15px;}
+#resume li .label{padding-right:10px;display:inline-block;width:120px;}
+#resume li a{border-bottom:1px dotted gray;font-style:italic;}
+#resume li a:hover {border-bottom:1px dotted black;}
+#resume ul li.sep{margin-bottom:10px;}
+#resume h3{font-size:15px;font-weight:bold;margin:27px 0 10px 0;line-height:15px;border-bottom:0px solid #cccccc;padding-bottom:4px;}
+#resume h3.first{margin-top:0;}
+#resume h4{font-size:12px;margin:20px 0 8px 0;font-weight:bold;}
+#resume h4 .date{float:right;}
+#resume h4 .url{display:none;}
+#resume .abstract{margin-bottom:20px;text-align:center;font-style:italic;color:gray;font-family:Cambria,Arial;font-size:15px;}
+#resume {background:580px -0px no-repeat;background-image:url(img/photo2.jpg);}
+
+/* samples card */
+#samples pre{font-family:monospace;overflow-x:auto;height:792px;overflow-y:scroll;background:white;width:100%;height:auto;overflow-y:auto;border:none !important;}
+#samples pre .Type{color:#2e8b57;font-weight:bold;}
+#samples pre .Identifier{color:#008080;}
+#samples pre .Constant{color:#ff00ff;}
+#samples pre .Statement{color:#804040;font-weight:bold;}
+#samples pre .Comment{color:#0000ff;}            
+#samples .note{font-size:11px;margin-bottom:10px;color:gray;text-align:right;font-style:italic;}
+#samples .buttons{font-size:13px;text-align:center;margin-bottom:5px;}
+#samples .buttons a{padding:0 5px;}
+#samples .buttons .active{font-weight:bold;font-size:15px;}
+
+/* nivo slider */
+#slider-wrap{float:right;width:402px;height:402px;padding:4px;background-image:url(img/slider.jpg);margin:0 0px 34px 30px;}
+#slider{position:relative;width:402px;height:402px;overflow:hidden;}
+#slider img{position:absolute;left:0px;top:0px;display:none;width:402px;height:402px;}
+#slider a {border:0;display:block;}
+
+/* code-samples scrollbar */
+#scrollbar{width:852px;height:792px;clear:both;margin:20px 0 10px;background:white;border:1px solid #eeeeee;}
+#scrollbar .viewport{width:832px;height:792px;overflow:hidden;position:relative;}
+#scrollbar .overview{list-style:none;position:absolute;left:0;top:0;}
+#scrollbar .thumb .end, #scrollbar .thumb{background-color:#003D5D;}
+#scrollbar .scrollbar{position:relative;float:right;width:15px;background:4px 100% no-repeat;background-image:url(img/scrollbar.png);margin-right:5px;display:inline;}
+#scrollbar .track{height:100%;width:14px;position:relative;padding:0 0px;background:4px 0 no-repeat;background-image:url(img/scrollbar-t.png);}
+#scrollbar .thumb{height:20px;width:15px;cursor:pointer;overflow:hidden;position:absolute;top:0;background:-15px 100% no-repeat;background-image:url(img/scrollbar.png);}
+#scrollbar .thumb .end{background:-15px 0 no-repeat;background-image:url(img/scrollbar-t.png);overflow:hidden;height:5px;width:15px;}
+#scrollbar .disable{display:none;}
+
+.cs-buttons{display:none;}
